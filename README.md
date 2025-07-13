@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MockView: AI-Powered Interview Practice Platform
 
-## Getting Started
+**MockView** is an AI-powered mock interview platform that simulates real-time interviews via voice calls. The AI asks you technical or behavioral questions, listens to your responses, and provides a downloadable feedback report based on your performance.
 
-First, run the development server:
+## ✨ Features
 
+- 🎤 Real-time mock interviews with AI via voice calls  
+- 🧠 Intelligent questioning using LLMs  
+- 📝 Generates downloadable performance feedback  
+- ⏱️ Instant and automated analysis after each session  
+- 🔒 Secure, client-friendly interface with no human reviewers  
+- 🛠️ No setup required — works in the browser
+
+---
+
+## 🛠️ Installation Steps
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/mockview.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 3. Add Environment Variables
+Create a file named .env.local in the root directory and add your necessary keys. Example:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Firebase Config
+NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your_measurement_id
 
-## Learn More
+# Google Gemini API
+NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
 
-To learn more about Next.js, take a look at the following resources:
+# Vapi.ai Key
+NEXT_PUBLIC_VAPI_API_KEY=your_vapi_api_key
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Start the Development Server
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💻 Built With
 
-## Deploy on Vercel
+- **Next.js** – React framework for building web apps  
+- **Firebase** – Auth, Firestore, and hosting  
+- **Tailwind CSS** – For rapid UI styling  
+- **Vapi.ai** – For real-time AI call interface  
+- **shadcn/ui** – Prebuilt accessible components  
+- **Google Gemini API** – For smart AI questioning and analysis
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ☕ Support
+
+If you find this project helpful, consider giving it a ⭐ on GitHub or [buy me a coffee](https://www.buymeacoffee.com/yourusername)!
